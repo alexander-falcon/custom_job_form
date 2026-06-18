@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="custom_apply_form" name="Custom Job Application Form" inherit_id="website_hr_recruitment.apply">
+        
+        <xpath expr="//h1[hasclass('mb-4')]" position="replace">
+            <h1 class="mb-4">Inicio de Test Tecnico</h1>
+        </xpath>
+        
+        <xpath expr="//input[@id='recruitment4']/ancestor::div[hasclass('s_website_form_field')]" position="attributes">
+            <attribute name="style">display: none !important;</attribute>
+        </xpath>
+        
+        <xpath expr="//input[@id='recruitment6']/ancestor::div[hasclass('s_website_form_field')]" position="attributes">
+            <attribute name="style">display: none !important;</attribute>
+        </xpath>
+        
+        <xpath expr="//textarea[@id='recruitment5']/ancestor::div[hasclass('s_website_form_field')]" position="attributes">
+            <attribute name="style">display: none !important;</attribute>
+        </xpath>
+        
+    </template>
+    
+</odoo>
